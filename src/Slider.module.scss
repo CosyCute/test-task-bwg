@@ -1,0 +1,54 @@
+.container {
+    padding: 50px;
+    background-color: white;
+    display: flex;
+    gap: 10px;
+    font-family: "Roboto";
+    > span {
+        color: gray;
+    }
+    > div:nth-child(2) {
+        display: flex;
+        gap: 15px;
+        button {
+            background-color: transparent;
+            border: 0;
+            cursor: pointer;
+        }
+        .currenciesWrapper {
+            width: 330px;
+            overflow: hidden;
+            > div {
+                width: 400px;
+                gap: 15px;
+                display: flex;
+            }
+
+            .currencies {
+                width: 315px;
+                display: flex;
+                flex-direction: row;
+                gap: 15px;
+                > div:nth-child(2) {
+                    display: flex;
+                    gap: 15px;
+                }
+            }
+            .currency {
+                transition-duration: 200ms;
+                text-align: center;
+                max-width: 40px;
+                width: 100%;
+                display: flex;
+                cursor: pointer;
+                color: lightgray;
+                span{
+                    width: 40px;
+                }
+            }
+        }
+        .active {
+            color: black !important;
+        }
+    }
+}
